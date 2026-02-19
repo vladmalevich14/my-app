@@ -1,5 +1,5 @@
-import { Button, ThemeButton } from './Button';
 import { ComponentMeta, ComponentStory } from '@storybook/react';
+import { Button, ThemeButton } from './Button';
 import { ThemeDecorator } from '../../config/storybook/ThemeDecorator/ThemeDecorator';
 import { Theme } from '../../../app/providers/ThemeProvider';
 
@@ -21,18 +21,18 @@ Primary.args = {
 export const Clear = Template.bind({});
 Clear.args = {
     children: 'Text',
-    theme: ThemeButton.CLEAR
+    theme: ThemeButton.CLEAR,
 };
 
 export const Outline = Template.bind({});
 Outline.args = {
     children: 'Text',
-    theme: ThemeButton.OUTLINE
+    theme: ThemeButton.OUTLINE,
 };
 
 export const OutlineDark = Template.bind({});
 OutlineDark.args = {
     children: 'Text',
-    theme: ThemeButton.OUTLINE
+    theme: ThemeButton.OUTLINE,
 };
-OutlineDark.decorators = [ThemeDecorator(Theme.DARK)]
+OutlineDark.decorators = [ThemeDecorator(Theme.DARK)];

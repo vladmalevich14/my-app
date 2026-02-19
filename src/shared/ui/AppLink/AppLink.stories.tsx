@@ -10,8 +10,8 @@ export default {
         backgroundColor: { control: 'color' },
     },
     arg: {
-        to: '/'
-    }
+        to: '/',
+    },
 } as ComponentMeta<typeof AppLink>;
 
 const Template: ComponentStory<typeof AppLink> = (args) => <AppLink {...args} />;
@@ -54,4 +54,3 @@ RedDark.args = {
     theme: AppLinkTheme.RED,
 };
 RedDark.decorators = [ThemeDecorator(Theme.DARK)];
-
