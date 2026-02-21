@@ -1,17 +1,15 @@
-const { addDecorator } = require('@storybook/react');
-const { StyleDecorator } = require('../../src/shared/config/storybook/StyleDecorator/StyleDecorator');
-const { ThemeDecorator } = require('../../src/shared/config/storybook/ThemeDecorator/ThemeDecorator');
-const { Theme } = require('../../src/app/providers/ThemeProvider');
-const { RouterDecorator } = require('../../src/shared/config/storybook/RouterDecorator/RouterDecorator');
+import { addDecorator } from '@storybook/react';
+import { StyleDecorator } from '../../src/shared/config/storybook/StyleDecorator/StyleDecorator';
+import { ThemeDecorator } from '../../src/shared/config/storybook/ThemeDecorator/ThemeDecorator';
+import { Theme } from '../../src/app/providers/ThemeProvider';
+import { RouterDecorator } from '../../src/shared/config/storybook/RouterDecorator/RouterDecorator';
 
-module.exports = {
-    parameters: {
-        actions: { argTypesRegex: "^on[A-Z].*" },
-        controls: {
-            matchers: {
-                color: /(background|color)$/i,
-                date: /Date$/i,
-            },
+export const parameters = {
+    actions: { argTypesRegex: '^on[A-Z].*' },
+    controls: {
+        matchers: {
+            color: /(background|color)$/i,
+            date: /Date$/,
         },
     },
 };
