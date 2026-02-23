@@ -1,22 +1,20 @@
 {
-  "Lorem ipsum dolor sit amet, consectetur adipisicing elit": {
-    " Aliquid commodi consequatur eligendi impedit incidunt necessitatibus possimus quis saepe sunt totam": {
-      "": ""
-    }
-  },
   "decrement": "decrement",
   "increment": "increment",
   "throw error": "throw error",
   "Введите username": "Введите username",
   "Введите пароль": "Введите пароль",
+  "Введите текст": "Type text",
   "Войти": "Войти",
-  "Главная": "Главная",
-  "Главная страница": "Главная страница",
-  "О сайте": "О сайте",
-  "О сайте123123": "О сайте123123",
+  "Вы ввели неверный логин или пароль": "",
+  "Выйти": "",
+  "Главная": "Main",
+  "Главная страница": "Main Page",
+  "О сайте": "About site",
   "Обновить страницу": "Обновить страницу",
-  "Переключить": "Переключить",
-  "Произошла непредвиденная ошибка": "Произошла непредвиденная ошибка",
-  "Страница не найдена": "Страница не найдена",
-  "Язык": "Язык"
+  "Переключить": "Switch",
+  "Произошла непредвиденная ошибка": "An unexpected error has occurred",
+  "Страница не найдена": "Page not found",
+  "Форма авторизации": "Форма авторизации",
+  "Язык": "Language"
 }
