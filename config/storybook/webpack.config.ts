@@ -32,5 +32,15 @@ export default ({ config }: { config: webpack.Configuration }) => {
         __IS_DEV__: true,
     }));
 
+    config.resolve.alias = {
+        ...(config.resolve.alias || {}),
+        app: path.resolve(paths.src, 'app'),
+        pages: path.resolve(paths.src, 'pages'),
+        widgets: path.resolve(paths.src, 'widgets'),
+        features: path.resolve(paths.src, 'features'),
+        entities: path.resolve(paths.src, 'entities'),
+        shared: path.resolve(paths.src, 'shared'),
+    };
+
     return config;
 };
