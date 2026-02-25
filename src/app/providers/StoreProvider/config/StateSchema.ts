@@ -1,10 +1,10 @@
-import { CounterSchema } from 'entities/Counter';
-import { UserSchema } from 'entities/User';
 import { LoginSchema } from 'features/AuthByUsername';
 import {
     AnyAction, CombinedState, EnhancedStore, Reducer, ReducersMapObject,
 } from '@reduxjs/toolkit';
-import { ProfileSchema } from 'entities/Profile';
+import { ProfileSchema } from '../../../../entities/Profile';
+import { UserSchema } from '../../../../entities/User';
+import { CounterSchema } from '../../../../entities/Counter';
 
 export interface StateSchema {
   counter: CounterSchema;
