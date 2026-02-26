@@ -13,23 +13,19 @@ module.exports = {
         ecmaVersion: 'latest',
         sourceType: 'module',
     },
-    plugins: [
-        'react',
-        '@typescript-eslint',
-        'i18next',
-        'react-hooks',
-    ],
+    plugins: ['react', '@typescript-eslint', 'i18next', 'react-hooks'],
     rules: {
         'react/jsx-indent': [2, 4],
         'react/jsx-indent-props': [2, 4],
         indent: [2, 4],
         'react/jsx-filename-extension': [
             2,
-            { extensions: ['.js', '.jsx', '.tsx'] },
+            { extensions: ['.js', '.jsx', '.tsx', '.ts'] },
         ],
         'import/no-unresolved': 'off',
         'import/prefer-default-export': 'off',
-        'no-unused-vars': 'warn',
+        'no-unused-vars': 'off',
+        '@typescript-eslint/no-unused-vars': 'warn',
         'react/require-default-props': 'off',
         'react/react-in-jsx-scope': 'off',
         'react/jsx-props-no-spreading': 'warn',
@@ -38,14 +34,20 @@ module.exports = {
         'import/extensions': 'off',
         'import/no-extraneous-dependencies': 'off',
         'no-underscore-dangle': 'off',
-        'i18next/no-literal-string': ['error', {
-            markupOnly: true,
-            ignoreAttribute: ['data-testid', 'to', 'placeholder'],
-        }],
-        'max-len': ['error', {
-            ignoreComments: true,
-            code: 120,
-        }],
+        'i18next/no-literal-string': [
+            'error',
+            {
+                markupOnly: true,
+                ignoreAttribute: ['data-testid', 'to', 'placeholder'],
+            },
+        ],
+        'max-len': [
+            'error',
+            {
+                ignoreComments: true,
+                code: 120,
+            },
+        ],
         'jsx-a11y/click-events-have-key-events': 'off',
         'jsx-a11y/no-static-element-interactions': 'off',
         'react-hooks/rules-of-hooks': 'error',
