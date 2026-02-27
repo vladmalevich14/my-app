@@ -1,10 +1,10 @@
 import { useTranslation } from 'react-i18next';
 import { classNames } from 'shared/lib/classNames/classNames';
 import { useSelector } from 'react-redux';
-import { getProfileData } from 'entities/Profile/model/selectors/getProfileData/getProfileData';
 import { Button, ButtonTheme } from 'shared/ui/Button/Button';
 import { Text } from 'shared/ui/Text/Text';
 import { Input } from 'shared/ui/Input/Input';
+import { getProfileData } from '../../model/selectors/getProfileData/getProfileData';
 import cls from './ProfileCard.module.scss';
 
 interface ProfileCardProps {
