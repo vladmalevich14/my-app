@@ -1,8 +1,11 @@
 .app_blue_theme {
-    --bg-color: #f4f8fb;
+    --bg-color: #f4f9fb;
     --inverted-bg-color: #32a0e0;
     --primary-color: #205b7d;
     --secondary-color: #0f93e0;
     --inverted-primary-color: #f4f8fb;
     --inverted-secondary-color: #fcfdfd;
+    --skeleton-shadow: #fff;
+    --skeleton-color: rgba(0 0 0 / 20%);
+    --code-bg: #fff;
 }

@@ -1,5 +1,5 @@
 import { TestAsyncThunk } from 'shared/lib/tests/TestAsyncThunk/TestAsyncThunk';
-import { ValidateProfileError } from 'entities/Profile';
+import { ValidateProfileError } from '../../../../Profile';
 import { Country } from '../../../../Country';
 import { Currency } from '../../../../Currency';
 import { updateProfileData } from './updateProfileData';
