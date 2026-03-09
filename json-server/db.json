@@ -97,7 +97,7 @@
       "text": "some comment 2",
       "postId": "1",
       "articleId": "1",
-      "userId": "1"
+      "userId": "2"
     },
     {
       "id": "3",
@@ -112,13 +112,15 @@
       "id": "1",
       "username": "admin",
       "password": "123",
-      "role": "ADMIN"
+      "role": "ADMIN",
+      "avatar": "https://www.shutterstock.com/image-vector/programmer-computer-expert-black-linear-600nw-2033137370.jpg"
     },
     {
       "id": "2",
       "username": "user",
       "password": "123",
-      "role": "USER"
+      "role": "USER",
+      "avatar": "https://img.freepik.com/free-vector/cute-girl-hacker-operating-laptop-cartoon-vector-icon-illustration-people-technology-isolated-flat_138676-9487.jpg?semt=ais_rp_50_assets&w=740&q=80"
     }
   ],
   "profile": {

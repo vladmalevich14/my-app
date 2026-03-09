@@ -5,6 +5,7 @@ import {
 import { CombinedState } from 'redux';
 import { AxiosInstance } from 'axios';
 import { NavigateOptions, To } from 'react-router-dom';
+import { ArticleDetailsCommentsSchema } from 'pages/ArticlesDetailsPage';
 import { UserSchema } from '../../../../entities/User';
 import { CounterSchema } from '../../../../entities/Counter';
 import { ProfileSchema } from '../../../../entities/Profile';
@@ -18,6 +19,7 @@ export interface StateSchema {
   loginForm?: LoginSchema;
   profile?: ProfileSchema;
   articleDetails?: ArticleDetailsSchema;
+  articleDetailsComments?: ArticleDetailsCommentsSchema;
 }
 
 export type StateSchemaKey = keyof StateSchema;
